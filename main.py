@@ -51,12 +51,20 @@ def show_list():
 
 
 def main():
-    show_menu()
+    while True:
+        show_menu()
 
-    choice = input("메뉴 선택: ")
+        choice = input("메뉴 선택: ")
 
-    if choice == "2":
-        show_list()
+        if choice == "2":
+            show_list()
+
+        elif choice == "0":
+            print("프로그램을 종료합니다.")
+            break
+
+        else:
+            print("아직 구현되지 않은 메뉴입니다.")
 
 
 if __name__ == "__main__":

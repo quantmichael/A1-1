@@ -1,25 +1,25 @@
-# 프롬프트 데이터
-prompts = [
-    {
-        "title": "블로그 글 작성",
-        "content": "SEO 최적화 블로그 글 작성",
-        "category": "텍스트 생성",
-        "favorite": False
-    },
-    {
-        "title": "이미지 생성",
-        "content": "귀여운 고양이 이미지를 생성해줘",
-        "category": "이미지 생성",
-        "favorite": True
-    },
-    {
-        "title": "뉴스 요약",
-        "content": "오늘 AI 뉴스를 요약해줘",
-        "category": "텍스트 생성",
-        "favorite": False
-    }
-]
+import json
 
+prompts = []
+
+def load_prompts():
+    global prompts
+
+    try:
+        with open("prompts.json", "r", encoding="utf-8") as file:
+            prompts = json.load(file)
+
+    except FileNotFoundError:
+        pass
+
+def save_prompts():
+    with open("prompts.json", "w", encoding="utf-8") as file:
+        json.dump(
+            prompts,
+            file,
+            ensure_ascii=False,
+            indent=4
+        )
 
 def show_menu():
     print()
@@ -92,6 +92,8 @@ def add_prompt():
     }
 
     prompts.append(new_prompt)
+
+    save_prompts()
 
     print()
     print("프롬프트가 추가되었습니다.")
@@ -245,10 +247,13 @@ def toggle_favorite():
 
     prompt["favorite"] = not prompt["favorite"]
 
+    save_prompts()
+    
     if prompt["favorite"]:
         print(f'"{prompt["title"]}"을(를) 즐겨찾기에 추가했습니다.')
     else:
         print(f'"{prompt["title"]}"을(를) 즐겨찾기에서 해제했습니다.')
+        
 
 def show_favorites():
     print()
@@ -267,7 +272,10 @@ def show_favorites():
 
     if not found:
         print("즐겨찾기한 프롬프트가 없습니다.")
+        
 def main():
+    load_prompts()
+
     while True:
         show_menu()
 

@@ -189,6 +189,82 @@ python main.py
 
 ---
 
+# Git 실습 내용
+
+이번 프로젝트에서는 Git과 GitHub를 활용하여 버전 관리를 수행하였습니다.
+
+---
+
+## Git 사용자 설정
+
+Git을 사용하기 전에 사용자 이름과 이메일을 설정하였습니다.
+
+### 사용자 정보 설정
+
+```bash
+git config --global user.name "ByeongGwang Nam"
+git config --global user.email "michaelis@naver.com"
+```
+
+### 설정 확인
+
+```bash
+git config --global user.name
+git config --global user.email
+```
+
+### 실행 결과
+
+```text
+ByeongGwang Nam
+michaelis@naver.com
+```
+
+![Git 사용자 설정](images/git-user-config.png)
+
+---
+
+## Git Clone
+
+원격 저장소를 로컬 컴퓨터로 복제하기 위해 `git clone` 명령을 사용했습니다.
+
+```bash
+git clone https://github.com/quantmichael/A1-1.git A1-1-clone
+```
+
+### 실행 결과
+
+![Git Clone](images/git-clone.png)
+
+## Git Branch 및 Merge
+
+기능 개발을 위해 브랜치를 생성하여 작업한 후 `main` 브랜치로 병합하였습니다.
+
+### 브랜치 생성
+
+```bash
+git checkout -b feature/readme
+```
+
+### 브랜치 병합
+
+```bash
+git checkout main
+git merge feature/readme
+```
+
+### 브랜치 및 병합 확인
+
+```bash
+git log --oneline --graph --all
+```
+
+### 실행 결과
+
+![Git Branch & Merge](images/git-branch-merge.png)
+
+---
+
 # Git 로그
 
 ![Git Log](images/gitlog.png)

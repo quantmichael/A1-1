@@ -39,8 +39,8 @@ A1-1
     ├── detail.png
     ├── favorite.png
     ├── json.png
-    ├── gitlog.png
-    └── github.png
+    ├── category.png
+    └── gitlog.png
 ```
 
 ---
@@ -157,6 +157,18 @@ python main.py
 
 ---
 
+## 카테고리별 조회
+
+![목록](images/category.png)
+
+---
+
+## 프롬프트 검색
+
+![목록](images/search.png)
+
+---
+
 ## 프롬프트 상세보기
 
 ![상세](images/detail.png)
@@ -166,7 +178,7 @@ python main.py
 ## 즐겨찾기
 
 ![즐겨찾기](images/favorite.png)
-
+![즐겨찾기목록](images/favorite_list.png)
 ---
 
 ## JSON 저장 확인

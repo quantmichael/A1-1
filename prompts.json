@@ -1,8 +1,62 @@
 [
     {
-        "title": "파이썬 함수 설명",
-        "content": "Python 함수의 개념과 예제를 초보자도 이해하기 쉽게 설명해줘.",
+        "title": "블로그 글 작성",
+        "content": "SEO에 최적화된 블로그 글을 작성해줘.",
         "category": "텍스트 생성",
         "favorite": true
+    },
+    {
+        "title": "이력서 첨삭",
+        "content": "신입 개발자 이력서를 전문가처럼 첨삭해줘.",
+        "category": "텍스트 생성",
+        "favorite": false
+    },
+    {
+        "title": "귀여운 고양이 그림",
+        "content": "우주복을 입은 귀여운 고양이를 수채화 스타일로 그려줘.",
+        "category": "이미지 생성",
+        "favorite": true
+    },
+    {
+        "title": "카페 인테리어",
+        "content": "모던한 분위기의 카페 내부를 3D 렌더링 스타일로 생성해줘.",
+        "category": "이미지 생성",
+        "favorite": false
+    },
+    {
+        "title": "유튜브 쇼츠 대본",
+        "content": "AI가 바꾸는 미래를 주제로 60초 쇼츠 대본을 작성해줘.",
+        "category": "영상 생성",
+        "favorite": false
+    },
+    {
+        "title": "광고 영상 기획",
+        "content": "친환경 텀블러 광고 영상을 30초 분량으로 기획해줘.",
+        "category": "영상 생성",
+        "favorite": false
+    },
+    {
+        "title": "영어 회화 선생님",
+        "content": "초보자를 위한 영어 회화를 단계별로 가르쳐줘.",
+        "category": "페르소나",
+        "favorite": false
+    },
+    {
+        "title": "면접관 역할",
+        "content": "Python 개발자 면접관 역할을 하면서 질문을 해줘.",
+        "category": "페르소나",
+        "favorite": false
+    },
+    {
+        "title": "엑셀 자동화",
+        "content": "Python으로 엑셀 데이터를 자동 정리하는 코드를 작성해줘.",
+        "category": "자동화",
+        "favorite": true
+    },
+    {
+        "title": "제주도 여행 일정",
+        "content": "3박 4일 제주도 가족 여행 일정을 추천해줘.",
+        "category": "기타",
+        "favorite": false
     }
 ]

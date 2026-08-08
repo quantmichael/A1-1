@@ -57,13 +57,32 @@ def add_prompt():
 
         print("내용은 비워둘 수 없습니다.")
 
-    while True:
-        category = input("카테고리: ").strip()
+    categories = {
+        "1": "텍스트 생성",
+        "2": "이미지 생성",
+        "3": "영상 생성",
+        "4": "페르소나",
+        "5": "자동화",
+        "6": "기타"
+    }
 
-        if category:
+    while True:
+        print()
+        print("=== 카테고리 선택 ===")
+        print("1. 텍스트 생성")
+        print("2. 이미지 생성")
+        print("3. 영상 생성")
+        print("4. 페르소나")
+        print("5. 자동화")
+        print("6. 기타")
+
+        category_choice = input("카테고리 번호: ").strip()
+
+        if category_choice in categories:
+            category = categories[category_choice]
             break
 
-        print("카테고리는 비워둘 수 없습니다.")
+        print("1~6 사이의 번호를 입력해주세요.")
 
     new_prompt = {
         "title": title,
@@ -74,6 +93,7 @@ def add_prompt():
 
     prompts.append(new_prompt)
 
+    print()
     print("프롬프트가 추가되었습니다.")
 
 

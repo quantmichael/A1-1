@@ -38,8 +38,10 @@ A1-1
     ├── list.png
     ├── detail.png
     ├── favorite.png
+    ├── favorite_list.png
     ├── json.png
     ├── category.png
+    ├── search.png
     └── gitlog.png
 ```
 

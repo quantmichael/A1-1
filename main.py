@@ -1,3 +1,26 @@
+# 프롬프트 데이터
+prompts = [
+    {
+        "title": "블로그 글 작성",
+        "content": "SEO 최적화 블로그 글 작성",
+        "category": "텍스트 생성",
+        "favorite": False
+    },
+    {
+        "title": "이미지 생성",
+        "content": "귀여운 고양이 이미지를 생성해줘",
+        "category": "이미지 생성",
+        "favorite": True
+    },
+    {
+        "title": "뉴스 요약",
+        "content": "오늘 AI 뉴스를 요약해줘",
+        "category": "텍스트 생성",
+        "favorite": False
+    }
+]
+
+
 def show_menu():
     print()
     print("=" * 40)
@@ -14,8 +37,26 @@ def show_menu():
     print("=" * 40)
 
 
+def show_list():
+    print()
+    print("=== 프롬프트 목록 ===")
+
+    for index, prompt in enumerate(prompts, start=1):
+        favorite_mark = "⭐" if prompt["favorite"] else ""
+
+        print(
+            f'{index}. {prompt["title"]} '
+            f'[{prompt["category"]}] {favorite_mark}'
+        )
+
+
 def main():
     show_menu()
+
+    choice = input("메뉴 선택: ")
+
+    if choice == "2":
+        show_list()
 
 
 if __name__ == "__main__":

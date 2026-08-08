@@ -37,6 +37,46 @@ def show_menu():
     print("=" * 40)
 
 
+def add_prompt():
+    print()
+    print("=== 프롬프트 추가 ===")
+
+    while True:
+        title = input("제목: ").strip()
+
+        if title:
+            break
+
+        print("제목은 비워둘 수 없습니다.")
+
+    while True:
+        content = input("내용: ").strip()
+
+        if content:
+            break
+
+        print("내용은 비워둘 수 없습니다.")
+
+    while True:
+        category = input("카테고리: ").strip()
+
+        if category:
+            break
+
+        print("카테고리는 비워둘 수 없습니다.")
+
+    new_prompt = {
+        "title": title,
+        "content": content,
+        "category": category,
+        "favorite": False
+    }
+
+    prompts.append(new_prompt)
+
+    print("프롬프트가 추가되었습니다.")
+
+
 def show_list():
     print()
     print("=== 프롬프트 목록 ===")
@@ -56,7 +96,10 @@ def main():
 
         choice = input("메뉴 선택: ")
 
-        if choice == "2":
+        if choice == "1":
+            add_prompt()
+
+        elif choice == "2":
             show_list()
 
         elif choice == "0":

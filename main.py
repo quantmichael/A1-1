@@ -167,6 +167,40 @@ def search_prompt():
     if not found:
         print("검색 결과가 없습니다.")
 
+def show_detail():
+    print()
+    print("=== 프롬프트 상세 보기 ===")
+
+    if not prompts:
+        print("등록된 프롬프트가 없습니다.")
+        return
+
+    show_list()
+
+    try:
+        number = int(input("상세히 볼 프롬프트 번호: "))
+    except ValueError:
+        print("숫자를 입력해주세요.")
+        return
+
+    if number < 1 or number > len(prompts):
+        print("존재하지 않는 프롬프트 번호입니다.")
+        return
+
+    prompt = prompts[number - 1]
+
+    favorite_text = "예" if prompt["favorite"] else "아니오"
+
+    print()
+    print("=" * 40)
+    print(f'제목       : {prompt["title"]}')
+    print(f'카테고리   : {prompt["category"]}')
+    print(f'즐겨찾기   : {favorite_text}')
+    print("-" * 40)
+    print("내용")
+    print(prompt["content"])
+    print("=" * 40)
+
 def main():
     while True:
         show_menu()
@@ -185,6 +219,9 @@ def main():
         elif choice == "4":
             search_prompt()
 
+        elif choice == "5":
+            show_detail()
+            
         elif choice == "0":
             print("프로그램을 종료합니다.")
             break

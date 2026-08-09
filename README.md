@@ -277,22 +277,6 @@ if not keyword:
 
 프로그램 종료 후에도 데이터가 유지되도록 JSON 파일을 사용하여 저장 및 불러오기 기능을 구현하였습니다.
 
----
-
-# Git 사용 내역
-
-프로젝트 개발 과정에서 아래 Git 명령을 사용하였습니다.
-
-- git init
-- git add
-- git commit
-- git checkout
-- git merge
-- git push
-- git pull
-- git clone
-
-브랜치를 생성하여 기능을 개발한 후 main 브랜치로 병합(Merge)하였습니다.
 
 ---
 
@@ -346,6 +330,23 @@ if not keyword:
 
 ![JSON](images/json.png)
 
+---
+
+# Git 사용 내역
+
+프로젝트 개발 과정에서 아래 Git 명령을 사용하였습니다.
+
+* `git init` → Git 시작
+* `git add` → 변경사항 준비
+* `git commit` → 변경사항 저장
+* `git checkout` → 브랜치 이동
+* `git merge` → 브랜치 합치기
+* `git push` → 원격 저장소에 업로드
+* `git pull` → 원격 저장소에서 가져오기
+* `git clone` → 원격 저장소 복사
+
+
+브랜치를 생성하여 기능을 개발한 후 main 브랜치로 병합(Merge)하였습니다.
 ---
 
 # Git 실습 내용

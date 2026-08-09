@@ -345,8 +345,8 @@ if not keyword:
 * `git pull` → 원격 저장소에서 가져오기
 * `git clone` → 원격 저장소 복사
 
-
 브랜치를 생성하여 기능을 개발한 후 main 브랜치로 병합(Merge)하였습니다.
+
 ---
 
 # Git 실습 내용

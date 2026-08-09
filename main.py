@@ -171,7 +171,7 @@ def show_list():
     print()
     print("=== 프롬프트 목록 ===")
 
-    git add main.pyif not prompts:
+    if not prompts:
         print("등록된 프롬프트가 없습니다.")
         return
 

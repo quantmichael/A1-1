@@ -33,7 +33,7 @@
         "title": "광고 영상 기획",
         "content": "친환경 텀블러 광고 영상을 30초 분량으로 기획해줘.",
         "category": "영상 생성",
-        "favorite": false
+        "favorite": true
     },
     {
         "title": "영어 회화 선생님",
@@ -51,7 +51,7 @@
         "title": "엑셀 자동화",
         "content": "Python으로 엑셀 데이터를 자동 정리하는 코드를 작성해줘.",
         "category": "자동화",
-        "favorite": true
+        "favorite": false
     },
     {
         "title": "제주도 여행 일정",
@@ -75,6 +75,18 @@
         "title": "프롬포트 테스트",
         "content": "안녕하세요\n테스트입니다.",
         "category": "기타",
+        "favorite": false
+    },
+    {
+        "title": "BGM 프롬프트",
+        "content": "Premium instrumental background music for an AI smart lighting advertisement.\n\nSoft piano melody with subtle ambient electronic textures and warm synth pads.\n\nWarm, modern, elegant, peaceful, emotional, and premium.\n\nThe music should gently evolve from a calm evening atmosphere to a warm and comfortable feeling, reflecting the transformation of a living space through intelligent lighting.\n\nNo vocals.\nInstrumental only.",
+        "category": "영상 생성",
+        "favorite": false
+    },
+    {
+        "title": "브랜드 로고 프롬프트",
+        "content": "Design a modern and minimalist logo for a fictional AI smart lighting brand named \"LUMINA\".\n\nThe logo should convey innovation, warmth, intelligence, and premium lifestyle.\n\nUse a clean sans-serif typography combined with a simple icon inspired by light, glow, or illumination.\n\nThe icon should be elegant, minimal, and easily recognizable.\n\nColor palette: warm white, soft gold, and deep navy.\n\nFlat vector logo, clean lines, balanced composition, premium branding, modern technology aesthetic, scalable, suitable for websites, mobile apps, product packaging, and advertisements.\n\nWhite background, no mockup, no 3D effects, SVG-style vector design.",
+        "category": "이미지 생성",
         "favorite": false
     }
 ]

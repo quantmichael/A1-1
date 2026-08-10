@@ -100,13 +100,19 @@ def add_prompt():
         print("제목은 비워둘 수 없습니다.")
 
     # 내용도 제목과 동일하게 빈 값 입력을 허용하지 않습니다.
-    while True:
-        content = input("내용: ").strip()
+    print("내용을 입력하세요. 입력이 끝나면 마지막 줄에 END를 입력하세요.")
 
-        if content:
+    lines = []
+
+    while True:
+        line = input()
+
+        if line == "END":
             break
 
-        print("내용은 비워둘 수 없습니다.")
+        lines.append(line)
+
+    content = "\n".join(lines)
 
     # 메뉴 번호와 실제 카테고리명을 연결하기 위해 딕셔너리를 사용합니다.
     # 사용자가 입력한 문자열 번호를 키로 조회하면 카테고리명을 쉽게 얻을 수 있습니다.
@@ -171,7 +177,7 @@ def show_list():
     print()
     print("=== 프롬프트 목록 ===")
 
-    git add main.pyif not prompts:
+    if not prompts:
         print("등록된 프롬프트가 없습니다.")
         return
 
